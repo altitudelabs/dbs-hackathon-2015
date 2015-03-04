@@ -15,6 +15,7 @@
 		D6437A751AA700DB0047FD66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6437A741AA700DB0047FD66 /* Images.xcassets */; };
 		D6437A781AA700DB0047FD66 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6437A761AA700DB0047FD66 /* LaunchScreen.xib */; };
 		D6437A841AA700DB0047FD66 /* DBSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A831AA700DB0047FD66 /* DBSTests.m */; };
+		FC3C5D451AA7107100F8B322 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3C5D431AA7107100F8B322 /* DataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		D6437A7D1AA700DB0047FD66 /* DBSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6437A821AA700DB0047FD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6437A831AA700DB0047FD66 /* DBSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBSTests.m; sourceTree = "<group>"; };
+		FC3C5D431AA7107100F8B322 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		FC3C5D441AA7107100F8B322 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 			children = (
 				D6437A681AA700DB0047FD66 /* AppDelegate.h */,
 				D6437A691AA700DB0047FD66 /* AppDelegate.m */,
+				FC3C5D431AA7107100F8B322 /* DataManager.m */,
+				FC3C5D441AA7107100F8B322 /* DataManager.h */,
 				D6437A6E1AA700DB0047FD66 /* ViewController.h */,
 				D6437A6F1AA700DB0047FD66 /* ViewController.m */,
 				D6437A711AA700DB0047FD66 /* Main.storyboard */,
@@ -223,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6437A6D1AA700DB0047FD66 /* DBS.xcdatamodeld in Sources */,
+				FC3C5D451AA7107100F8B322 /* DataManager.m in Sources */,
 				D6437A6A1AA700DB0047FD66 /* AppDelegate.m in Sources */,
 				D6437A701AA700DB0047FD66 /* ViewController.m in Sources */,
 				D6437A671AA700DB0047FD66 /* main.m in Sources */,
@@ -418,6 +424,7 @@
 				D6437A891AA700DB0047FD66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6437A8A1AA700DB0047FD66 /* Build configuration list for PBXNativeTarget "DBSTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				D6437A8C1AA700DB0047FD66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

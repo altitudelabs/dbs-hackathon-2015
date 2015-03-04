@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DataManager.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSMutableDictionary *person1 = [[DataManager sharedInstance] getNextCard];
+    [[DataManager sharedInstance] swipeRight: person1];
+    
+    [[DataManager sharedInstance] filterCardStackWithRoom:kFundraising positions:nil];
+
+    NSMutableDictionary *person2 = [[DataManager sharedInstance] getNextCard];
+    [[DataManager sharedInstance] swipeRight: person2];
+    
+    [[DataManager sharedInstance] getMatches];
+    
 }
 
 - (void)didReceiveMemoryWarning {
