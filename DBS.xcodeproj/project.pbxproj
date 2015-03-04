@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D61AF3341AA72790006C2F55 /* ProfileContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D61AF3331AA72790006C2F55 /* ProfileContentViewController.m */; };
 		D6437A671AA700DB0047FD66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A661AA700DB0047FD66 /* main.m */; };
 		D6437A6A1AA700DB0047FD66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A691AA700DB0047FD66 /* AppDelegate.m */; };
 		D6437A6D1AA700DB0047FD66 /* DBS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6437A6B1AA700DB0047FD66 /* DBS.xcdatamodeld */; };
@@ -15,6 +16,10 @@
 		D6437A751AA700DB0047FD66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6437A741AA700DB0047FD66 /* Images.xcassets */; };
 		D6437A781AA700DB0047FD66 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6437A761AA700DB0047FD66 /* LaunchScreen.xib */; };
 		D6437A841AA700DB0047FD66 /* DBSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A831AA700DB0047FD66 /* DBSTests.m */; };
+		D6437A941AA70C090047FD66 /* DraggableViewBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A8F1AA70C090047FD66 /* DraggableViewBackground.m */; };
+		D6437A951AA70C090047FD66 /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A911AA70C090047FD66 /* DraggableView.m */; };
+		D6437A961AA70C090047FD66 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A931AA70C090047FD66 /* OverlayView.m */; };
+		D6437A991AA70D7F0047FD66 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A981AA70D7F0047FD66 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D61AF3321AA72790006C2F55 /* ProfileContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileContentViewController.h; sourceTree = "<group>"; };
+		D61AF3331AA72790006C2F55 /* ProfileContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileContentViewController.m; sourceTree = "<group>"; };
 		D6437A611AA700DB0047FD66 /* DBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6437A651AA700DB0047FD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6437A661AA700DB0047FD66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +49,14 @@
 		D6437A7D1AA700DB0047FD66 /* DBSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6437A821AA700DB0047FD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6437A831AA700DB0047FD66 /* DBSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBSTests.m; sourceTree = "<group>"; };
+		D6437A8E1AA70C090047FD66 /* DraggableViewBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableViewBackground.h; sourceTree = "<group>"; };
+		D6437A8F1AA70C090047FD66 /* DraggableViewBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableViewBackground.m; sourceTree = "<group>"; };
+		D6437A901AA70C090047FD66 /* DraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
+		D6437A911AA70C090047FD66 /* DraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableView.m; sourceTree = "<group>"; };
+		D6437A921AA70C090047FD66 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		D6437A931AA70C090047FD66 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		D6437A971AA70D7F0047FD66 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		D6437A981AA70D7F0047FD66 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +98,15 @@
 		D6437A631AA700DB0047FD66 /* DBS */ = {
 			isa = PBXGroup;
 			children = (
+				D6437A8D1AA70BF30047FD66 /* SwipeAPI */,
 				D6437A681AA700DB0047FD66 /* AppDelegate.h */,
 				D6437A691AA700DB0047FD66 /* AppDelegate.m */,
 				D6437A6E1AA700DB0047FD66 /* ViewController.h */,
 				D6437A6F1AA700DB0047FD66 /* ViewController.m */,
+				D6437A971AA70D7F0047FD66 /* ProfileViewController.h */,
+				D6437A981AA70D7F0047FD66 /* ProfileViewController.m */,
+				D61AF3321AA72790006C2F55 /* ProfileContentViewController.h */,
+				D61AF3331AA72790006C2F55 /* ProfileContentViewController.m */,
 				D6437A711AA700DB0047FD66 /* Main.storyboard */,
 				D6437A741AA700DB0047FD66 /* Images.xcassets */,
 				D6437A761AA700DB0047FD66 /* LaunchScreen.xib */,
@@ -120,6 +140,19 @@
 				D6437A821AA700DB0047FD66 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6437A8D1AA70BF30047FD66 /* SwipeAPI */ = {
+			isa = PBXGroup;
+			children = (
+				D6437A8E1AA70C090047FD66 /* DraggableViewBackground.h */,
+				D6437A8F1AA70C090047FD66 /* DraggableViewBackground.m */,
+				D6437A901AA70C090047FD66 /* DraggableView.h */,
+				D6437A911AA70C090047FD66 /* DraggableView.m */,
+				D6437A921AA70C090047FD66 /* OverlayView.h */,
+				D6437A931AA70C090047FD66 /* OverlayView.m */,
+			);
+			name = SwipeAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +255,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6437A951AA70C090047FD66 /* DraggableView.m in Sources */,
 				D6437A6D1AA700DB0047FD66 /* DBS.xcdatamodeld in Sources */,
+				D6437A991AA70D7F0047FD66 /* ProfileViewController.m in Sources */,
+				D61AF3341AA72790006C2F55 /* ProfileContentViewController.m in Sources */,
+				D6437A961AA70C090047FD66 /* OverlayView.m in Sources */,
 				D6437A6A1AA700DB0047FD66 /* AppDelegate.m in Sources */,
 				D6437A701AA700DB0047FD66 /* ViewController.m in Sources */,
 				D6437A671AA700DB0047FD66 /* main.m in Sources */,
+				D6437A941AA70C090047FD66 /* DraggableViewBackground.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +387,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DBS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +399,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DBS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +458,7 @@
 				D6437A891AA700DB0047FD66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6437A8A1AA700DB0047FD66 /* Build configuration list for PBXNativeTarget "DBSTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +467,7 @@
 				D6437A8C1AA700DB0047FD66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *mainView;
+
+
+- (IBAction)openDrawer:(id)sender;
+
 
 @end
 
