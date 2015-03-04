@@ -7,7 +7,11 @@
 //
 
 #import "ViewController.h"
+<<<<<<< HEAD
 #import "DraggableViewBackground.h"
+=======
+#import "DataManager.h"
+>>>>>>> 00fd4922ba9f3854cd05d7e87e5463ca10b85871
 
 @interface ViewController ()
 
@@ -21,6 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+<<<<<<< HEAD
     DraggableViewBackground *draggableBackground = [[DraggableViewBackground alloc]initWithFrame:CGRectMake(0, 0, self.mainView.frame.size.width, self.mainView.frame.size.height)];
     [self.mainView addSubview:draggableBackground];
     
@@ -30,6 +35,19 @@
     [self addChildViewController:drawerVC];
     [self.view insertSubview:drawerVC.view belowSubview:self.mainView];
     self.drawerOpened = NO;
+=======
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSMutableDictionary *person1 = [[DataManager sharedInstance] getNextCard];
+    [[DataManager sharedInstance] swipeRight: person1];
+    
+    [[DataManager sharedInstance] filterCardStackWithRoom:kFundraising positions:nil];
+
+    NSMutableDictionary *person2 = [[DataManager sharedInstance] getNextCard];
+    [[DataManager sharedInstance] swipeRight: person2];
+    
+    [[DataManager sharedInstance] getMatches];
+>>>>>>> 00fd4922ba9f3854cd05d7e87e5463ca10b85871
     
 }
 

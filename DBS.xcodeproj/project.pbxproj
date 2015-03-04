@@ -16,10 +16,14 @@
 		D6437A751AA700DB0047FD66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6437A741AA700DB0047FD66 /* Images.xcassets */; };
 		D6437A781AA700DB0047FD66 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6437A761AA700DB0047FD66 /* LaunchScreen.xib */; };
 		D6437A841AA700DB0047FD66 /* DBSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A831AA700DB0047FD66 /* DBSTests.m */; };
+<<<<<<< HEAD
 		D6437A941AA70C090047FD66 /* DraggableViewBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A8F1AA70C090047FD66 /* DraggableViewBackground.m */; };
 		D6437A951AA70C090047FD66 /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A911AA70C090047FD66 /* DraggableView.m */; };
 		D6437A961AA70C090047FD66 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A931AA70C090047FD66 /* OverlayView.m */; };
 		D6437A991AA70D7F0047FD66 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A981AA70D7F0047FD66 /* ProfileViewController.m */; };
+=======
+		FC3C5D451AA7107100F8B322 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3C5D431AA7107100F8B322 /* DataManager.m */; };
+>>>>>>> 00fd4922ba9f3854cd05d7e87e5463ca10b85871
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,7 @@
 		D6437A7D1AA700DB0047FD66 /* DBSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6437A821AA700DB0047FD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6437A831AA700DB0047FD66 /* DBSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBSTests.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		D6437A8E1AA70C090047FD66 /* DraggableViewBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableViewBackground.h; sourceTree = "<group>"; };
 		D6437A8F1AA70C090047FD66 /* DraggableViewBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableViewBackground.m; sourceTree = "<group>"; };
 		D6437A901AA70C090047FD66 /* DraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
@@ -57,6 +62,10 @@
 		D6437A931AA70C090047FD66 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
 		D6437A971AA70D7F0047FD66 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		D6437A981AA70D7F0047FD66 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+=======
+		FC3C5D431AA7107100F8B322 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		FC3C5D441AA7107100F8B322 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+>>>>>>> 00fd4922ba9f3854cd05d7e87e5463ca10b85871
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,8 @@
 				D6437A8D1AA70BF30047FD66 /* SwipeAPI */,
 				D6437A681AA700DB0047FD66 /* AppDelegate.h */,
 				D6437A691AA700DB0047FD66 /* AppDelegate.m */,
+				FC3C5D431AA7107100F8B322 /* DataManager.m */,
+				FC3C5D441AA7107100F8B322 /* DataManager.h */,
 				D6437A6E1AA700DB0047FD66 /* ViewController.h */,
 				D6437A6F1AA700DB0047FD66 /* ViewController.m */,
 				D6437A971AA70D7F0047FD66 /* ProfileViewController.h */,
@@ -257,9 +268,13 @@
 			files = (
 				D6437A951AA70C090047FD66 /* DraggableView.m in Sources */,
 				D6437A6D1AA700DB0047FD66 /* DBS.xcdatamodeld in Sources */,
+<<<<<<< HEAD
 				D6437A991AA70D7F0047FD66 /* ProfileViewController.m in Sources */,
 				D61AF3341AA72790006C2F55 /* ProfileContentViewController.m in Sources */,
 				D6437A961AA70C090047FD66 /* OverlayView.m in Sources */,
+=======
+				FC3C5D451AA7107100F8B322 /* DataManager.m in Sources */,
+>>>>>>> 00fd4922ba9f3854cd05d7e87e5463ca10b85871
 				D6437A6A1AA700DB0047FD66 /* AppDelegate.m in Sources */,
 				D6437A701AA700DB0047FD66 /* ViewController.m in Sources */,
 				D6437A671AA700DB0047FD66 /* main.m in Sources */,
