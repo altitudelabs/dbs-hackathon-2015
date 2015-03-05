@@ -31,6 +31,15 @@
 //    nc.navigationBar.translucent = NO;
     [nc setNavigationBarHidden:YES animated:YES];
     
+//    // Search bar
+////    self.searchBar.searchBarStyle = UISearchBarStyleMinimal;
+//    //self.searchBar.backgroundColor = [UIColor redColor];
+//    [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setDefaultTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:206.0/255.0 green:36.0/255.0 blue:43.0/255.0 alpha:1]}];
+//    [[UILabel appearanceWhenContainedIn:[UISearchBar class], nil] setTextColor:[UIColor whiteColor]];
+    
+
+    
+    
     
     draggableBackground = [[DraggableViewBackground alloc]initWithFrame:CGRectMake(0, 0, self.mainView.frame.size.width, self.mainView.frame.size.height)];
     [self.mainView addSubview:draggableBackground];

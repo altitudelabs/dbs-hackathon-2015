@@ -21,6 +21,12 @@
         UISwitch *sss = (UISwitch *)[self.bgView viewWithTag:i];
         [sss setOnTintColor:[UIColor colorWithRed:206.0/255.0 green:36.0/255.0 blue:43.0/255.0 alpha:1]];
     }
+    
+    // Search bar
+    //    self.searchBar.searchBarStyle = UISearchBarStyleMinimal;
+    //self.searchBar.backgroundColor = [UIColor redColor];
+    [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setDefaultTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:206.0/255.0 green:36.0/255.0 blue:43.0/255.0 alpha:1]}];
+    [[UILabel appearanceWhenContainedIn:[UISearchBar class], nil] setTextColor:[UIColor whiteColor]];
 }
 
 - (IBAction)saveClicked:(id)sender {

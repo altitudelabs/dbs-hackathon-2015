@@ -27,7 +27,7 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     profileContentVC = [storyboard instantiateViewControllerWithIdentifier:@"ProfileContentViewController"];
     
-    self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height + 200);
+    self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height + 0);
     self.view.clipsToBounds = YES;
     
     [self addChildViewController:profileContentVC];

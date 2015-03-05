@@ -48,7 +48,7 @@
         [person setObject:[self getRandomRoom] forKey:@"room"];
         [person setObject:[self getRandomPosition] forKey:@"position"];
         [person setObject:companyName forKey:@"company"];
-        [person setObject:[self getRandomLookingFor] forKey:@"lookingFor"];
+        [person setObject:[self getRandomRating] forKey:@"lookingFor"];
         [person setObject:[self getRandomInterests] forKey:@"interests"];
         [person setObject:[self getRandomCompanyDescription:companyName] forKey:@"about"];
         
@@ -85,15 +85,9 @@
 }
 
 - (NSString*)getRandomPosition {
-    NSUInteger n = [self random:PositionCount];
-    switch (n) {
-        case kCEO:
-            return @"CEO";
-            break;
-        default:
-            return @"CEO";
-            break;
-    }
+    NSArray *data = @[@"Hong Kong", @"Shenzhen", @"Shanghai", @"Guangdong", @"Taipei", @"Beijing", @"Tianjin", @"Xiamen", @"Dongguan"];
+    
+    return [NSString stringWithFormat:@"%@", [data objectAtIndex:[self random:data.count]]];
 }
 
 - (NSString*)getRandomRoom {
@@ -126,7 +120,7 @@
 - (NSString*)getRandomName {
     NSArray *firstNames = @[@"Gilbert", @"Christian", @"Hyman", @"Walker", @"Whitney", @"Shelton", @"Bruce", @"Isaias", @"Wilburn", @"Todd", @"Merrill", @"Josue", @"Shannon", @"Elroy", @"Donn", @"Carlo", @"Marcos", @"Carlos", @"Wiley", @"Frederick", @"Jesse", @"Basil", @"Jewell", @"Benton", @"Luis", @"Norbert", @"Kelvin", @"Lorenzo", @"Leroy", @"Tyrell", @"Robt", @"Coy", @"Darrin", @"Jarred", @"Hans", @"Wade", @"Osvaldo", @"Stephen", @"Angelo", @"Chi", @"Preston", @"Craig", @"Sherman", @"Millard", @"Elmer", @"Bennett", @"Jerrold", @"Quincy", @"Kory", @"Zachary"];
     
-    NSArray *lastNames = @[@"Chen", @"Li", @"Lee", @"Zhang", @"Ye", @"Liu", @"Wang"];
+    NSArray *lastNames = @[@"Chen", @"Li", @"Lee", @"Zhang", @"Ye", @"Liu", @"Wang", @"Wong", @"Chiu", @"Ma", @"Wu", @"Ho", @"Lo", @"Lim", @"Pang", @"Tung", @"Poon", @"Zheng", @"Liu"];
     
     return [NSString stringWithFormat:@"%@ %@", [firstNames objectAtIndex:[self random:firstNames.count]], [lastNames objectAtIndex:[self random:lastNames.count]]];
 }
@@ -134,7 +128,7 @@
 - (NSString*)getRandomCompany {
     NSArray *companyName = @[@"Gilbert", @"Christian", @"Hyman", @"Walker", @"Whitney", @"Shelton", @"Bruce", @"Isaias", @"Wilburn", @"Todd", @"Merrill", @"Josue", @"Shannon", @"Elroy", @"Donn", @"Carlo", @"Marcos", @"Carlos", @"Wiley", @"Frederick", @"Jesse", @"Basil", @"Jewell", @"Benton", @"Luis", @"Norbert", @"Kelvin", @"Lorenzo", @"Leroy", @"Tyrell", @"Robt", @"Coy", @"Darrin", @"Jarred", @"Hans", @"Wade", @"Osvaldo", @"Stephen", @"Angelo", @"Chi", @"Preston", @"Craig", @"Sherman", @"Millard", @"Elmer", @"Bennett", @"Jerrold", @"Quincy", @"Kory", @"Zachary"];
     
-    NSArray *companySuffix = @[@"Pte Ltd", @"Limited", @"Group", @"Corporation", @"and Co", @"Labs", @"Trading", @"Services"];
+    NSArray *companySuffix = @[@"Pte Ltd", @"Limited", @"Group", @"Corporation", @"and Co", @"Trading", @"Services"];
     
     return [NSString stringWithFormat:@"%@ %@", [companyName objectAtIndex:[self random:companyName.count]], [companySuffix objectAtIndex:[self random:companySuffix.count]]];
 }
@@ -150,17 +144,17 @@
 }
 
 - (NSString*)getRandomCompanyDescription:(NSString*)companyName {
-    NSArray *type = @[@"is a electronics trading company", @"provides legal services", @"owns and operates restaurant chains", @"provides software development services", @"is a teaching academy", @"provides business to business consulting services", @"trades livestock, cattle and grain"];
+    NSArray *type = @[@"is a sportswear company", @"is a winter sports manufacturer", @"is a running shoe manufacturer"];
     
-    NSArray *area = @[@"in Taiwan.", @"in Shenzhen.", @"in Hong Kong", @"in Hong Kong, Korea and Japan.", @"in Beijing", @"in Shanghai", @"in Taipei", @"in Kowloon", @"in Guangdong and Hong Kong"];
+    NSArray *area = @[@"in Taiwan.", @"in Shenzhen.", @"in Hong Kong.", @"in Hong Kong, Korea and Japan.", @"in Beijing.", @"in Shanghai.", @"in Taipei.", @"in Kowloon.", @"in Guangdong and Hong Kong."];
     
     return [NSString stringWithFormat:@"%@ %@ %@", companyName, [type objectAtIndex:[self random:type.count]], [area objectAtIndex:[self random:area.count]]];
 }
 
 - (NSArray*)getRandomInterests {
-    NSMutableArray *data = [NSMutableArray arrayWithArray:@[@"Golf", @"Tennis", @"Drinking", @"Calligraphy", @"Food", @"Hiking", @"Skiing", @"Writing", @"Karoake", @"Yachting", @"Bowling", @"Badminton"]];
+    NSMutableArray *data = [NSMutableArray arrayWithArray:@[@"Bikes", @"Tennis", @"Badminton", @"Tents", @"Shoes", @"Hiking", @"Skiing", @"Trekking", @"Swimming", @"Football", @"Rugby", @"Handball", @"Golf"]];
     
-    NSUInteger n = [self random:5];
+    NSUInteger n = [self random: 5];
     
     NSMutableArray *interests = [[NSMutableArray alloc] initWithCapacity:n];
     
@@ -173,10 +167,15 @@
     return interests;
 }
 
-- (NSString*)getRandomLookingFor {
-    NSArray *data = @[@"golf buddies", @"tennis buddies", @"hiking enthusiast", @"people who like hanging out", @"people to run with"];
+- (NSString*)getRandomRating {
+    double rating = (double)[self random: 50]/10;
+    NSUInteger numberOfPeople = [self random: 200];
     
-    return [NSString stringWithFormat:@"Looking for %@", [data objectAtIndex:[self random:data.count]]];
+    NSNumberFormatter *doubleValueWithMaxTwoDecimalPlaces = [[NSNumberFormatter alloc] init];
+    [doubleValueWithMaxTwoDecimalPlaces setNumberStyle:NSNumberFormatterDecimalStyle];
+    [doubleValueWithMaxTwoDecimalPlaces setMaximumFractionDigits:2];
+    
+    return [NSString stringWithFormat:@"%@/5.0 (%lu Ratings)", [doubleValueWithMaxTwoDecimalPlaces stringFromNumber:[NSNumber numberWithDouble:rating]], numberOfPeople];
 }
 
 - (NSString*)getRandomImageUrl {

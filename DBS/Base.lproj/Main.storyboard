@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tdt-nX-U3a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rC7-CE-Qz6">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -24,9 +24,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYV-fI-HOz">
-                                        <rect key="frame" x="253" y="21" width="60" height="30"/>
+                                        <rect key="frame" x="280" y="21" width="40" height="30"/>
                                         <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="13"/>
-                                        <state key="normal" title="Matches">
+                                        <state key="normal" title="M">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -43,15 +43,15 @@
                                             <action selector="openDrawer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eEy-gM-F0A"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lup-Cv-jnN">
-                                        <rect key="frame" x="87" y="20" width="145" height="30"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
-                                        <state key="normal" title="General Networking">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MX7-iO-uhP">
+                                        <rect key="frame" x="54" y="19" width="220" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Sporting goods">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="topBarTitleClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lcT-Q7-qn5"/>
+                                            <action selector="topBarTitleClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="o82-rh-gEv"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -72,7 +72,7 @@
                                 <rect key="frame" x="185" y="510" width="100" height="33"/>
                                 <color key="backgroundColor" red="0.80784313730000001" green="0.14117647059999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
-                                <state key="normal" title="CONNECT">
+                                <state key="normal" title="SHORTLIST">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="384" y="279"/>
+            <point key="canvasLocation" x="1388" y="261"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="64f-vM-YGI">
@@ -129,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uyb-GM-lq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="279"/>
+            <point key="canvasLocation" x="2686" y="279"/>
         </scene>
         <!--Profile Content View Controller-->
         <scene sceneID="Ml7-t4-JYz">
@@ -144,13 +144,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fortune Li" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCn-xS-50x">
-                                <rect key="frame" x="124" y="20" width="156" height="21"/>
+                                <rect key="frame" x="124" y="32" width="156" height="21"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXH-ug-ohX">
-                                <rect key="frame" x="124" y="49" width="156" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXH-ug-ohX">
+                                <rect key="frame" x="124" y="55" width="156" height="20"/>
                                 <string key="text" base64-UTF8="YES">
 Rm91bmRlciBhbmQgQ0VPIANvZiBQYWNpZmljIEVsZWN0cm9uaWNzA
 </string>
@@ -158,8 +158,8 @@ Rm91bmRlciBhbmQgQ0VPIANvZiBQYWNpZmljIEVsZWN0cm9uaWNzA
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Looking for tennis buddies" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp8-01-L1k">
-                                <rect key="frame" x="124" y="99" width="156" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Looking for tennis buddies" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp8-01-L1k">
+                                <rect key="frame" x="124" y="77" width="156" height="20"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -172,7 +172,7 @@ Rm91bmRlciBhbmQgQ0VPIANvZiBQYWNpZmljIEVsZWN0cm9uaWNzA
                                 <rect key="frame" x="0.0" y="151" width="497" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Skills &amp; Interests" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEI-aI-1UC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Products" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEI-aI-1UC">
                                 <rect key="frame" x="9" y="161" width="219" height="21"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -187,6 +187,15 @@ Rm91bmRlciBhbmQgQ0VPIANvZiBQYWNpZmljIEVsZWN0cm9uaWNzA
                                 <color key="backgroundColor" red="0.80784313725490198" green="0.14117647058823529" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="11"/>
                                 <state key="normal" title="Trading">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yr4-1K-lxK">
+                                <rect key="frame" x="124" y="102" width="80" height="21"/>
+                                <color key="backgroundColor" red="0.80784313730000001" green="0.14117647059999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="11"/>
+                                <state key="normal" title="DBS Verified">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -521,21 +530,10 @@ Rm91bmRlciBhbmQgQ0VPIANvZiBQYWNpZmljIEVsZWN0cm9uaWNzA
                                             <action selector="openDrawer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9aY-XP-CS2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgs-OJ-AeV">
-                                        <rect key="frame" x="87" y="20" width="145" height="30"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
-                                        <state key="normal" title="Filters">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="topBarTitleClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JWp-y9-4VR"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.80784313730000001" green="0.14117647059999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Looking for people" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xF-AW-pKd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Electronics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xF-AW-pKd">
                                 <rect key="frame" x="16" y="88" width="133" height="21"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -604,7 +602,7 @@ Rm91bmRlciBhbmQgQ0VPIANvZiBQYWNpZmljIEVsZWN0cm9uaWNzA
                                 <rect key="frame" x="10" y="237" width="300" height="1"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Looking for Events" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozK-R4-0qw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Furnitures" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozK-R4-0qw">
                                 <rect key="frame" x="16" y="271" width="133" height="21"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -653,6 +651,10 @@ Rm91bmRlciBhbmQgQ0VPIANvZiBQYWNpZmljIEVsZWN0cm9uaWNzA
                                 <rect key="frame" x="10" y="420" width="300" height="1"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Find products..." translatesAutoresizingMaskIntoConstraints="NO" id="wJ0-Qy-bAy">
+                                <rect key="frame" x="57" y="7" width="200" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -670,30 +672,30 @@ Rm91bmRlciBhbmQgQ0VPIANvZiBQYWNpZmljIEVsZWN0cm9uaWNzA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gkA-bY-yzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1737" y="279"/>
+            <point key="canvasLocation" x="3361" y="279"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="bem-jB-f5D">
+        <scene sceneID="kcT-3S-sYq">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tdt-nX-U3a" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rC7-CE-Qz6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ajT-3O-0s1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PmN-wP-G3I">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="w6D-db-bER"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="2KD-QJ-c1E"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ief-0K-g94" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qtt-w9-FYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="384" y="-510"/>
+            <point key="canvasLocation" x="576" y="261"/>
         </scene>
     </scenes>
     <resources>
-        <image name="14.jpg" width="200" height="200"/>
-        <image name="4.jpg" width="200" height="200"/>
+        <image name="14.jpg" width="752" height="752"/>
+        <image name="4.jpg" width="752" height="752"/>
         <image name="back.png" width="23" height="40"/>
         <image name="personalProfile.png" width="320" height="568"/>
         <image name="phone.png" width="54" height="56"/>
