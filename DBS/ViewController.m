@@ -56,8 +56,16 @@
     [UIView animateWithDuration:0.3f animations:^{
         self.mainView.frame = CGRectMake(self.drawerOpened? 0 : 200,
                                         0, self.view.frame.size.width, self.view.frame.size.height);
+        self.topbar.frame = CGRectMake(self.drawerOpened? 0 : 200,
+                                         0, self.topbar.frame.size.width, self.topbar.frame.size.height);
     } completion:^(BOOL finished) {
         drawerOpened = !drawerOpened;
     }];
+}
+
+- (IBAction)topBarTitleClicked:(id)sender {
+}
+
+- (IBAction)mathcesClicked:(id)sender {
 }
 @end
