@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="1174" y="383"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile Content View Controller-->
         <scene sceneID="Ml7-t4-JYz">
             <objects>
-                <viewController storyboardIdentifier="ProfileContentViewController" id="OCM-GV-bt9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileContentViewController" id="OCM-GV-bt9" customClass="ProfileContentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FGp-7F-xmj"/>
                         <viewControllerLayoutGuide type="bottom" id="OuN-Aq-WvX"/>
