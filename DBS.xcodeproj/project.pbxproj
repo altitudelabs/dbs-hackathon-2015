@@ -47,6 +47,8 @@
 		D63997BE1AA7F8FC001ABDBA /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63997BD1AA7F8FC001ABDBA /* settings@2x.png */; };
 		D63997C11AA8066D001ABDBA /* FiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63997C01AA8066D001ABDBA /* FiltersViewController.m */; };
 		D63997C31AA812C4001ABDBA /* personalProfile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63997C21AA812C4001ABDBA /* personalProfile@2x.png */; };
+		D63997C51AA81FC6001ABDBA /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63997C41AA81FC6001ABDBA /* back@2x.png */; };
+		D63997C81AA82079001ABDBA /* MatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63997C71AA82079001ABDBA /* MatchViewController.m */; };
 		D6437A671AA700DB0047FD66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A661AA700DB0047FD66 /* main.m */; };
 		D6437A6A1AA700DB0047FD66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A691AA700DB0047FD66 /* AppDelegate.m */; };
 		D6437A6D1AA700DB0047FD66 /* DBS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6437A6B1AA700DB0047FD66 /* DBS.xcdatamodeld */; };
@@ -59,6 +61,8 @@
 		D6437A951AA70C090047FD66 /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A911AA70C090047FD66 /* DraggableView.m */; };
 		D6437A961AA70C090047FD66 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A931AA70C090047FD66 /* OverlayView.m */; };
 		D6437A991AA70D7F0047FD66 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A981AA70D7F0047FD66 /* ProfileViewController.m */; };
+		D6464CE01AA8235A000B8FEA /* MatchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6464CDF1AA8235A000B8FEA /* MatchTableViewCell.m */; };
+		D6464CE21AA825EB000B8FEA /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6464CE11AA825EB000B8FEA /* phone@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +119,9 @@
 		D63997BF1AA8066D001ABDBA /* FiltersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersViewController.h; sourceTree = "<group>"; };
 		D63997C01AA8066D001ABDBA /* FiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersViewController.m; sourceTree = "<group>"; };
 		D63997C21AA812C4001ABDBA /* personalProfile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "personalProfile@2x.png"; sourceTree = "<group>"; };
+		D63997C41AA81FC6001ABDBA /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		D63997C61AA82079001ABDBA /* MatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchViewController.h; sourceTree = "<group>"; };
+		D63997C71AA82079001ABDBA /* MatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchViewController.m; sourceTree = "<group>"; };
 		D6437A611AA700DB0047FD66 /* DBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6437A651AA700DB0047FD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6437A661AA700DB0047FD66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -137,6 +144,9 @@
 		D6437A931AA70C090047FD66 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
 		D6437A971AA70D7F0047FD66 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		D6437A981AA70D7F0047FD66 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		D6464CDE1AA8235A000B8FEA /* MatchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchTableViewCell.h; sourceTree = "<group>"; };
+		D6464CDF1AA8235A000B8FEA /* MatchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchTableViewCell.m; sourceTree = "<group>"; };
+		D6464CE11AA825EB000B8FEA /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,10 +217,12 @@
 		D63997B61AA7F2D9001ABDBA /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D63997C41AA81FC6001ABDBA /* back@2x.png */,
 				D63997C21AA812C4001ABDBA /* personalProfile@2x.png */,
 				D63997BD1AA7F8FC001ABDBA /* settings@2x.png */,
 				D63997BB1AA7F472001ABDBA /* loading.png */,
 				D63997B71AA7F2E5001ABDBA /* loading@2x.png */,
+				D6464CE11AA825EB000B8FEA /* phone@2x.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -249,6 +261,10 @@
 				D61AF3321AA72790006C2F55 /* ProfileContentViewController.h */,
 				D61AF3331AA72790006C2F55 /* ProfileContentViewController.m */,
 				D6437A711AA700DB0047FD66 /* Main.storyboard */,
+				D63997C61AA82079001ABDBA /* MatchViewController.h */,
+				D63997C71AA82079001ABDBA /* MatchViewController.m */,
+				D6464CDE1AA8235A000B8FEA /* MatchTableViewCell.h */,
+				D6464CDF1AA8235A000B8FEA /* MatchTableViewCell.m */,
 				D63997BF1AA8066D001ABDBA /* FiltersViewController.h */,
 				D63997C01AA8066D001ABDBA /* FiltersViewController.m */,
 				D639976B1AA7D6FF001ABDBA /* DataManager.h */,
@@ -349,6 +365,7 @@
 				TargetAttributes = {
 					D6437A601AA700DB0047FD66 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = Y42P2AUC8J;
 					};
 					D6437A7C1AA700DB0047FD66 = {
 						CreatedOnToolsVersion = 6.1;
@@ -396,6 +413,7 @@
 				D6437A781AA700DB0047FD66 /* LaunchScreen.xib in Resources */,
 				D63997B51AA7F24C001ABDBA /* 30.jpg in Resources */,
 				D63997AA1AA7F24C001ABDBA /* 19.jpg in Resources */,
+				D63997C51AA81FC6001ABDBA /* back@2x.png in Resources */,
 				D63997A51AA7F24C001ABDBA /* 14.jpg in Resources */,
 				D639979F1AA7F24C001ABDBA /* 8.jpg in Resources */,
 				D63997B41AA7F24C001ABDBA /* 29.jpg in Resources */,
@@ -420,6 +438,7 @@
 				D63997B11AA7F24C001ABDBA /* 26.jpg in Resources */,
 				D63997AC1AA7F24C001ABDBA /* 21.jpg in Resources */,
 				D63997A21AA7F24C001ABDBA /* 11.jpg in Resources */,
+				D6464CE21AA825EB000B8FEA /* phone@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,8 +464,10 @@
 				D63997C11AA8066D001ABDBA /* FiltersViewController.m in Sources */,
 				D6437A961AA70C090047FD66 /* OverlayView.m in Sources */,
 				D6437A6A1AA700DB0047FD66 /* AppDelegate.m in Sources */,
+				D63997C81AA82079001ABDBA /* MatchViewController.m in Sources */,
 				D6437A701AA700DB0047FD66 /* ViewController.m in Sources */,
 				D6437A671AA700DB0047FD66 /* main.m in Sources */,
+				D6464CE01AA8235A000B8FEA /* MatchTableViewCell.m in Sources */,
 				D6437A941AA70C090047FD66 /* DraggableViewBackground.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,10 +591,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DBS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -582,10 +606,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DBS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

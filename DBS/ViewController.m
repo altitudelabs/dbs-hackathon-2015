@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DraggableViewBackground.h"
+#import "MatchViewController.h"
 
 @interface ViewController ()
 
@@ -91,7 +92,9 @@
 }
 
 - (IBAction)mathcesClicked:(id)sender {
-    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MatchViewController *matchVC = [storyboard instantiateViewControllerWithIdentifier:@"MatchViewController"];
+    [self.navigationController pushViewController:matchVC animated:YES];
 }
 
 - (IBAction)btnLaterClicked:(id)sender {
