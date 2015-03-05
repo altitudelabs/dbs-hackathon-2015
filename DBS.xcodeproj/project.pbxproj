@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D61AF3341AA72790006C2F55 /* ProfileContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D61AF3331AA72790006C2F55 /* ProfileContentViewController.m */; };
+		D639976D1AA7D6FF001ABDBA /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D639976C1AA7D6FF001ABDBA /* DataManager.m */; };
 		D6437A671AA700DB0047FD66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A661AA700DB0047FD66 /* main.m */; };
 		D6437A6A1AA700DB0047FD66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A691AA700DB0047FD66 /* AppDelegate.m */; };
 		D6437A6D1AA700DB0047FD66 /* DBS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6437A6B1AA700DB0047FD66 /* DBS.xcdatamodeld */; };
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		D61AF3321AA72790006C2F55 /* ProfileContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileContentViewController.h; sourceTree = "<group>"; };
 		D61AF3331AA72790006C2F55 /* ProfileContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileContentViewController.m; sourceTree = "<group>"; };
+		D639976B1AA7D6FF001ABDBA /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		D639976C1AA7D6FF001ABDBA /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		D6437A611AA700DB0047FD66 /* DBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6437A651AA700DB0047FD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6437A661AA700DB0047FD66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 				D61AF3321AA72790006C2F55 /* ProfileContentViewController.h */,
 				D61AF3331AA72790006C2F55 /* ProfileContentViewController.m */,
 				D6437A711AA700DB0047FD66 /* Main.storyboard */,
+				D639976B1AA7D6FF001ABDBA /* DataManager.h */,
+				D639976C1AA7D6FF001ABDBA /* DataManager.m */,
 				D6437A741AA700DB0047FD66 /* Images.xcassets */,
 				D6437A761AA700DB0047FD66 /* LaunchScreen.xib */,
 				D6437A6B1AA700DB0047FD66 /* DBS.xcdatamodeld */,
@@ -256,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6437A951AA70C090047FD66 /* DraggableView.m in Sources */,
+				D639976D1AA7D6FF001ABDBA /* DataManager.m in Sources */,
 				D6437A6D1AA700DB0047FD66 /* DBS.xcdatamodeld in Sources */,
 				D6437A991AA70D7F0047FD66 /* ProfileViewController.m in Sources */,
 				D61AF3341AA72790006C2F55 /* ProfileContentViewController.m in Sources */,

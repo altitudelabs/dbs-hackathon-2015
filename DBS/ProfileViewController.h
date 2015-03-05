@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
-
+- (void)swipeRight;
+- (void)swipeLeft;
 
 @end

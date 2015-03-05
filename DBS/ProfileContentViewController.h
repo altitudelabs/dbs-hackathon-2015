@@ -10,4 +10,7 @@
 
 @interface ProfileContentViewController : UIViewController
 
+- (void)swipeRight;
+- (void)swipeLeft;
+
 @end

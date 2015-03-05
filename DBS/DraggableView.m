@@ -7,7 +7,6 @@
 
 
 #import "DraggableView.h"
-#import "ProfileViewController.h"
 
 @implementation DraggableView {
     CGFloat xFromCenter;
@@ -21,6 +20,7 @@
 //@synthesize information;
 @synthesize overlayView;
 @synthesize passingData;
+@synthesize profileVC;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -59,11 +59,11 @@
     self.layer.shadowOffset = CGSizeMake(1, 1);
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"ProfileViewController"];
+    profileVC = [storyboard instantiateViewControllerWithIdentifier:@"ProfileViewController"];
     NSLog(@"DraggableView data: %@", self.passingData);
     
-    [self addSubview:vc.view];
-    vc.view.frame = CGRectMake(0, 0, self.frame.size.width,self.frame.size.height);
+    [self addSubview:profileVC.view];
+    profileVC.view.frame = CGRectMake(0, 0, self.frame.size.width,self.frame.size.height);
 }
 
 /*
@@ -169,6 +169,8 @@
     
     [delegate cardSwipedRight:self];
     
+    [profileVC swipeRight];
+    
     NSLog(@"YES");
 }
 
@@ -184,6 +186,8 @@
                      }];
     
     [delegate cardSwipedLeft:self];
+    
+    [profileVC swipeLeft];
     
     NSLog(@"NO");
 }
