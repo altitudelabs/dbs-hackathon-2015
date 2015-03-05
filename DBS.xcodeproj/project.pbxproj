@@ -45,6 +45,8 @@
 		D63997B81AA7F2E5001ABDBA /* loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63997B71AA7F2E5001ABDBA /* loading@2x.png */; };
 		D63997BC1AA7F472001ABDBA /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = D63997BB1AA7F472001ABDBA /* loading.png */; };
 		D63997BE1AA7F8FC001ABDBA /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63997BD1AA7F8FC001ABDBA /* settings@2x.png */; };
+		D63997C11AA8066D001ABDBA /* FiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63997C01AA8066D001ABDBA /* FiltersViewController.m */; };
+		D63997C31AA812C4001ABDBA /* personalProfile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63997C21AA812C4001ABDBA /* personalProfile@2x.png */; };
 		D6437A671AA700DB0047FD66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A661AA700DB0047FD66 /* main.m */; };
 		D6437A6A1AA700DB0047FD66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6437A691AA700DB0047FD66 /* AppDelegate.m */; };
 		D6437A6D1AA700DB0047FD66 /* DBS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6437A6B1AA700DB0047FD66 /* DBS.xcdatamodeld */; };
@@ -110,6 +112,9 @@
 		D63997B71AA7F2E5001ABDBA /* loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading@2x.png"; sourceTree = "<group>"; };
 		D63997BB1AA7F472001ABDBA /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
 		D63997BD1AA7F8FC001ABDBA /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		D63997BF1AA8066D001ABDBA /* FiltersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersViewController.h; sourceTree = "<group>"; };
+		D63997C01AA8066D001ABDBA /* FiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersViewController.m; sourceTree = "<group>"; };
+		D63997C21AA812C4001ABDBA /* personalProfile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "personalProfile@2x.png"; sourceTree = "<group>"; };
 		D6437A611AA700DB0047FD66 /* DBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6437A651AA700DB0047FD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6437A661AA700DB0047FD66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -202,6 +207,7 @@
 		D63997B61AA7F2D9001ABDBA /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D63997C21AA812C4001ABDBA /* personalProfile@2x.png */,
 				D63997BD1AA7F8FC001ABDBA /* settings@2x.png */,
 				D63997BB1AA7F472001ABDBA /* loading.png */,
 				D63997B71AA7F2E5001ABDBA /* loading@2x.png */,
@@ -243,6 +249,8 @@
 				D61AF3321AA72790006C2F55 /* ProfileContentViewController.h */,
 				D61AF3331AA72790006C2F55 /* ProfileContentViewController.m */,
 				D6437A711AA700DB0047FD66 /* Main.storyboard */,
+				D63997BF1AA8066D001ABDBA /* FiltersViewController.h */,
+				D63997C01AA8066D001ABDBA /* FiltersViewController.m */,
 				D639976B1AA7D6FF001ABDBA /* DataManager.h */,
 				D639976C1AA7D6FF001ABDBA /* DataManager.m */,
 				D6437A741AA700DB0047FD66 /* Images.xcassets */,
@@ -380,6 +388,7 @@
 				D63997971AA7F24C001ABDBA /* 0.jpg in Resources */,
 				D63997A01AA7F24C001ABDBA /* 9.jpg in Resources */,
 				D63997A41AA7F24C001ABDBA /* 13.jpg in Resources */,
+				D63997C31AA812C4001ABDBA /* personalProfile@2x.png in Resources */,
 				D63997751AA7EB1B001ABDBA /* SwissBTBolCon.otf in Resources */,
 				D6437A731AA700DB0047FD66 /* Main.storyboard in Resources */,
 				D63997B31AA7F24C001ABDBA /* 28.jpg in Resources */,
@@ -433,6 +442,7 @@
 				D6437A6D1AA700DB0047FD66 /* DBS.xcdatamodeld in Sources */,
 				D6437A991AA70D7F0047FD66 /* ProfileViewController.m in Sources */,
 				D61AF3341AA72790006C2F55 /* ProfileContentViewController.m in Sources */,
+				D63997C11AA8066D001ABDBA /* FiltersViewController.m in Sources */,
 				D6437A961AA70C090047FD66 /* OverlayView.m in Sources */,
 				D6437A6A1AA700DB0047FD66 /* AppDelegate.m in Sources */,
 				D6437A701AA700DB0047FD66 /* ViewController.m in Sources */,

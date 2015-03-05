@@ -65,6 +65,9 @@
 }
 
 - (IBAction)topBarTitleClicked:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *filtersVC = [storyboard instantiateViewControllerWithIdentifier:@"FiltersViewController"];
+    [self.navigationController pushViewController:filtersVC animated:YES];
 }
 
 - (IBAction)mathcesClicked:(id)sender {
