@@ -37,18 +37,20 @@
     self.people = [[NSMutableArray alloc] initWithCapacity:n];
     
     for (int i = 0; i < n; i++){
+        NSString *companyName = [self getRandomCompany];
+        
         NSMutableDictionary *person = [[NSMutableDictionary alloc] init];
         [person setObject:[NSNumber numberWithInt:i] forKey:@"id"];
-        [person setObject:@"" forKey:@"profile"];
+        [person setObject:[self getRandomImageUrl] forKey:@"profile"];
         [person setObject:[self getRandomName] forKey:@"name"];
         [person setObject:[NSNumber numberWithBool: NO] forKey:@"matched"];
         [person setObject:[self getRandomDistance] forKey:@"distance"];
         [person setObject:[self getRandomRoom] forKey:@"room"];
         [person setObject:[self getRandomPosition] forKey:@"position"];
-        [person setObject:[self getRandomCompany] forKey:@"company"];
+        [person setObject:companyName forKey:@"company"];
         [person setObject:[self getRandomLookingFor] forKey:@"lookingFor"];
         [person setObject:[self getRandomInterests] forKey:@"interests"];
-        [person setObject:@"ACE Limited is a supplier for autoparts in the Greater China region" forKey:@"about"];
+        [person setObject:[self getRandomCompanyDescription:companyName] forKey:@"about"];
         
         [self.people addObject:person];
     }
@@ -148,7 +150,11 @@
 }
 
 - (NSString*)getRandomCompanyDescription:(NSString*)companyName {
-    return @"";
+    NSArray *type = @[@"is a electronics trading company", @"provides legal services", @"owns and operates restaurant chains", @"provides software development services", @"is a teaching academy", @"provides business to business consulting services", @"trades livestock, cattle and grain"];
+    
+    NSArray *area = @[@"in Taiwan.", @"in Shenzhen.", @"in Hong Kong", @"in Hong Kong, Korea and Japan.", @"in Beijing", @"in Shanghai", @"in Taipei", @"in Kowloon", @"in Guangdong and Hong Kong"];
+    
+    return [NSString stringWithFormat:@"%@ %@ %@", companyName, [type objectAtIndex:[self random:type.count]], [area objectAtIndex:[self random:area.count]]];
 }
 
 - (NSArray*)getRandomInterests {
@@ -174,7 +180,9 @@
 }
 
 - (NSString*)getRandomImageUrl {
-    return nil;
+    NSUInteger n = [self random: 30];
+    
+    return [NSString stringWithFormat:@"%lu.jpg", (unsigned long)n];
 }
 
 @end

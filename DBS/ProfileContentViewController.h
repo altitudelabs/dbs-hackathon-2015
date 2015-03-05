@@ -10,6 +10,17 @@
 
 @interface ProfileContentViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIView *bgView;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *jobTitle;
+@property (weak, nonatomic) IBOutlet UILabel *hobby;
+@property (weak, nonatomic) IBOutlet UILabel *aboutDetail;
+
+
+
+
 - (void)swipeRight;
 - (void)swipeLeft;
 

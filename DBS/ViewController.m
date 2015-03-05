@@ -21,6 +21,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // NAvigation bar
+    UINavigationController* nc = (UINavigationController*)[[[UIApplication sharedApplication] delegate] window].rootViewController;
+    [nc.navigationBar setBarTintColor:[UIColor colorWithRed:206.0/255.0 green:36.0/255.0 blue:43.0/255.0 alpha:1]];
+    nc.navigationBar.translucent = NO;
+    
+    
     DraggableViewBackground *draggableBackground = [[DraggableViewBackground alloc]initWithFrame:CGRectMake(0, 0, self.mainView.frame.size.width, self.mainView.frame.size.height)];
     [self.mainView addSubview:draggableBackground];
     
