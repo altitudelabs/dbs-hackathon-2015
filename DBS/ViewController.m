@@ -13,11 +13,13 @@
 
 
 @property (assign, nonatomic) BOOL drawerOpened;
+@property (strong, nonatomic) DraggableViewBackground *draggableBackground;
 @end
 
 @implementation ViewController
 @synthesize mainView;
 @synthesize drawerOpened;
+@synthesize draggableBackground;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,7 +31,7 @@
     [nc setNavigationBarHidden:YES animated:YES];
     
     
-    DraggableViewBackground *draggableBackground = [[DraggableViewBackground alloc]initWithFrame:CGRectMake(0, 0, self.mainView.frame.size.width, self.mainView.frame.size.height)];
+    draggableBackground = [[DraggableViewBackground alloc]initWithFrame:CGRectMake(0, 0, self.mainView.frame.size.width, self.mainView.frame.size.height)];
     [self.mainView addSubview:draggableBackground];
     
     // Drawer setup
@@ -39,6 +41,9 @@
     [self.view insertSubview:drawerVC.view belowSubview:self.mainView];
     self.drawerOpened = NO;
     
+    // UI
+    self.btnLater.layer.borderWidth = 1;
+    self.btnLater.layer.borderColor = [UIColor colorWithRed:184.0/255.0 green:184.0/255.0 blue:184.0/255.0 alpha:1].CGColor;
 }
 
 - (IBAction)openDrawer:(id)sender {
@@ -59,6 +64,21 @@
                                         0, self.view.frame.size.width, self.view.frame.size.height);
         self.topbar.frame = CGRectMake(self.drawerOpened? 0 : 200,
                                          0, self.topbar.frame.size.width, self.topbar.frame.size.height);
+        
+        self.btnConnect.frame = CGRectMake(self.drawerOpened?
+                                           self.btnConnect.frame.origin.x - 200 :
+                                           self.btnConnect.frame.origin.x + 200,
+                                           self.btnConnect.frame.origin.y,
+                                           self.btnConnect.frame.size.width,
+                                           self.btnConnect.frame.size.height);
+        
+        self.btnLater.frame = CGRectMake(self.drawerOpened?
+                                           self.btnLater.frame.origin.x - 200 :
+                                           self.btnLater.frame.origin.x + 200,
+                                           self.btnLater.frame.origin.y,
+                                           self.btnLater.frame.size.width,
+                                           self.btnLater.frame.size.height);
+        
     } completion:^(BOOL finished) {
         drawerOpened = !drawerOpened;
     }];
@@ -71,5 +91,14 @@
 }
 
 - (IBAction)mathcesClicked:(id)sender {
+    
+}
+
+- (IBAction)btnLaterClicked:(id)sender {
+    [draggableBackground swipeLeft];
+}
+
+- (IBAction)btnConnectClick:(id)sender {
+    [draggableBackground swipeRight];
 }
 @end

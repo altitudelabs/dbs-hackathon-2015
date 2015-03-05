@@ -13,11 +13,17 @@
 @property (weak, nonatomic) IBOutlet UIView *mainView;
 @property (weak, nonatomic) IBOutlet UIView *topbar;
 
+@property (weak, nonatomic) IBOutlet UIButton *btnLater;
+@property (weak, nonatomic) IBOutlet UIButton *btnConnect;
+
+
 
 - (IBAction)openDrawer:(id)sender;
 - (IBAction)topBarTitleClicked:(id)sender;
-
 - (IBAction)mathcesClicked:(id)sender;
+
+- (IBAction)btnLaterClicked:(id)sender;
+- (IBAction)btnConnectClick:(id)sender;
 
 @end
 

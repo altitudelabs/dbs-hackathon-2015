@@ -57,6 +57,29 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.80784313730000001" green="0.14117647059999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pv7-kn-NDG" userLabel="Later">
+                                <rect key="frame" x="30" y="510" width="100" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="LATER">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLaterClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yJz-YV-np9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yD-37-qVb" userLabel="Connect">
+                                <rect key="frame" x="185" y="510" width="100" height="33"/>
+                                <color key="backgroundColor" red="0.80784313730000001" green="0.14117647059999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="CONNECT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnConnectClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="93L-2Y-C7N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -75,6 +98,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="btnConnect" destination="7yD-37-qVb" id="xTB-nB-rDA"/>
+                        <outlet property="btnLater" destination="pv7-kn-NDG" id="yZH-7a-4Bm"/>
                         <outlet property="mainView" destination="0CU-aR-wor" id="PaT-o4-Ho7"/>
                         <outlet property="topbar" destination="rud-kg-QnE" id="Ken-Oa-H5a"/>
                     </connections>
@@ -104,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uyb-GM-lq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1986" y="383"/>
+            <point key="canvasLocation" x="1062" y="279"/>
         </scene>
         <!--Profile Content View Controller-->
         <scene sceneID="Ml7-t4-JYz">
@@ -255,7 +280,7 @@ Rm91bmRlciBhbmQgQ0VPIANvZiBQYWNpZmljIEVsZWN0cm9uaWNzA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4al-sq-GLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077" y="1137"/>
+            <point key="canvasLocation" x="1085" y="1017"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="eYp-8W-ivS">
@@ -468,7 +493,7 @@ Rm91bmRlciBhbmQgQ0VPIANvZiBQYWNpZmljIEVsZWN0cm9uaWNzA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gkA-bY-yzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-263" y="726"/>
+            <point key="canvasLocation" x="1737" y="279"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bem-jB-f5D">
@@ -486,7 +511,7 @@ Rm91bmRlciBhbmQgQ0VPIANvZiBQYWNpZmljIEVsZWN0cm9uaWNzA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ief-0K-g94" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744" y="-546"/>
+            <point key="canvasLocation" x="384" y="-510"/>
         </scene>
     </scenes>
     <resources>
