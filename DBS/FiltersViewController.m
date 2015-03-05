@@ -23,9 +23,9 @@
     }
     
     // Search bar
-    //    self.searchBar.searchBarStyle = UISearchBarStyleMinimal;
-    //self.searchBar.backgroundColor = [UIColor redColor];
-    [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setDefaultTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:206.0/255.0 green:36.0/255.0 blue:43.0/255.0 alpha:1]}];
+        self.searchBar.searchBarStyle = UISearchBarStyleMinimal;
+//    self.searchBar.backgroundColor = [UIColor redColor];
+    [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setDefaultTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1]}];
     [[UILabel appearanceWhenContainedIn:[UISearchBar class], nil] setTextColor:[UIColor whiteColor]];
 }
 

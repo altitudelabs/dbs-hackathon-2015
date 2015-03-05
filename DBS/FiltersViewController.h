@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UIView *bgView;
 
 - (IBAction)saveClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 
 @end
